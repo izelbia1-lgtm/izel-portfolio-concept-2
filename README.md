@@ -4,7 +4,9 @@ A personal portfolio for software developer applications and small-business webs
 
 ## Design
 
-Concept 1: Feminine Tech / Premium. A name-led technical hero, dark asymmetric project showcase, compact technology cards and a clear experience timeline. Cream, charcoal and plum carry the visual identity; the portrait appears only as a small About detail.
+Concept 2: Dark Modern Tech. A near-black and graphite interface with muted lavender accents, sans-serif typography, a CSS-built application architecture visual, large project showcases and an interactive stack explorer. No personal portrait is displayed.
+
+This working version is on `concept-2-dark-tech`. Concept 1 remains preserved on `main` at `8e13356`.
 
 ## Features
 
@@ -57,9 +59,10 @@ src/
   styles.css               Tailwind import, design tokens and responsive styles
   components/
     Header.tsx             Desktop and mobile navigation
-    Hero.tsx               Layered project preview and component excerpt
+    Hero.tsx               Developer architecture composition
     ProjectCard.tsx        Reusable project showcase
     TrainingProject.tsx    Training application technology overview
+    TechStack.tsx          Keyboard-accessible technology category explorer
     Icon.tsx               Local SVG icons
     CaseStudy.tsx          Native modal dialog
     Contact.tsx            Email draft form

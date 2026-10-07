@@ -54,3 +54,7 @@ The palette, typography, headline and section structure remain unchanged. Portra
 ## Concept 1 redesign — 7 October 2026
 
 The existing content.ts data was preserved byte-for-byte in this redesign. Presentation changes do not alter project classifications, dates, education status, technologies or links. The training application overview uses the existing verified React, Django, Express and MongoDB implementation details. The hero names the actual React/Vite portfolio stack. No metrics, testimonials or additional employment claims were introduced.
+
+## Concept 2 redesign
+
+Profile, projects, technologies, dates and experience remain unchanged in `src/content.ts` from Concept 1. The hero architecture composition is an illustrative overview of existing technologies, not a claim about a new application or its performance. The portrait asset is retained in the repository but is not rendered. Client, concept and training classifications remain explicit. No new qualifications or commercial achievements have been added.

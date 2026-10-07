@@ -31,15 +31,15 @@ export function Contact() {
     <section id="contact" className="contact section-pad">
       <div className="container contact-grid">
         <div>
-          <span className="eyebrow">07 / Get in touch</span>
+          <span className="eyebrow">07 / Make contact</span>
           <h2>
-            Good things start
+            Let’s build
             <br />
-            with a <em>conversation.</em>
+            something that matters<span>.</span>
           </h2>
           <p>
-            Have a developer opportunity or a website in mind? Tell me a little
-            about it.
+            A developer opportunity. A business website. A useful idea. Tell me
+            a little about it.
           </p>
           <a className="contact-email" href={`mailto:${profile.email}`}>
             <Icon name="mail" size={20} />

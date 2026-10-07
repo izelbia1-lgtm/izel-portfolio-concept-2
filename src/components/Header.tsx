@@ -36,12 +36,12 @@ export function Header() {
   return (
     <header className="site-header">
       <div className="container header-inner">
-        <a className="wordmark" href="#home" aria-label="izel. / dev — Izel Bianchina home">
-          izel<span>.</span>
-          <span className="wordmark-code" aria-hidden="true">
-            {" "}
-            / dev
-          </span>
+        <a
+          className="wordmark"
+          href="#home"
+          aria-label="ib. - Izel Bianchina home"
+        >
+          ib<span>.</span>
         </a>
         <button
           ref={toggle}
@@ -99,4 +99,3 @@ export function Header() {
     </header>
   );
 }
-
