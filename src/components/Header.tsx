@@ -36,12 +36,8 @@ export function Header() {
   return (
     <header className="site-header">
       <div className="container header-inner">
-        <a
-          className="wordmark"
-          href="#home"
-          aria-label="ib. - Izel Bianchina home"
-        >
-          ib<span>.</span>
+        <a className="wordmark" href="#home" aria-label="Izel Bianchina home">
+          Izel Bianchina<span>.</span>
         </a>
         <button
           ref={toggle}

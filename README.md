@@ -4,9 +4,10 @@ A personal portfolio for software developer applications and small-business webs
 
 ## Design
 
-Concept 2: Dark Modern Tech. A near-black and graphite interface with muted lavender accents, sans-serif typography, a CSS-built application architecture visual, large project showcases and an interactive stack explorer. No personal portrait is displayed.
+Concept 2: Cinematic Dark Modern Tech. A photographic developer workspace hero, expressive serif typography, mauve accents, overlapping project previews and translucent service/contact cards. Original workspace backgrounds contain no people. The factual project and career content remains in `src/content.ts`.
 
-This working version is on `concept-2-dark-tech`. Concept 1 remains preserved on `main` at `8e13356`.
+This checkout belongs only to `izel-portfolio-concept-2`. The approved cinematic design is maintained on `concept-2-dark-tech` and published to this repository’s `main`. Deployment is configured separately.
+
 
 ## Features
 
@@ -59,7 +60,8 @@ src/
   styles.css               Tailwind import, design tokens and responsive styles
   components/
     Header.tsx             Desktop and mobile navigation
-    Hero.tsx               Developer architecture composition
+    Hero.tsx               Photographic developer workspace hero
+    ProjectMontage.tsx     Layered live project previews
     ProjectCard.tsx        Reusable project showcase
     TrainingProject.tsx    Training application technology overview
     TechStack.tsx          Keyboard-accessible technology category explorer
@@ -67,7 +69,7 @@ src/
     CaseStudy.tsx          Native modal dialog
     Contact.tsx            Email draft form
 public/
-  images/                  Portrait and project screenshots
+  images/                  Project screenshots and local workspace backgrounds
   Izel_Bianchina_CV.pdf     Downloadable original CV
   favicon.svg
 scripts/
@@ -88,11 +90,11 @@ See `CONTENT-CHECKLIST.md` for outstanding content, `CONTENT-AUDIT.md` for state
 
 ## Deployment
 
-Publish this folder as its own GitHub repository. Do not include `.qa`, `node_modules`, local environment files or dependency caches.
+This is the standalone `izel-portfolio-concept-2` repository. Do not include `.qa`, `node_modules`, local environment files or dependency caches.
 
 ### Vercel or another static host
 
-1. Import the repository. If using a parent repository, select `izel-portfolio` as the root directory.
+1. Import `izel-portfolio-concept-2` and use the repository root directory.
 2. Use `npm ci` to install, `npm run build` to build and `dist` as the output directory.
 3. Set `SITE_URL` to the final HTTPS URL and rebuild.
 4. Verify the deployed CV, screenshots, email draft flow and project links.

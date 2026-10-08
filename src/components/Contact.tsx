@@ -33,9 +33,11 @@ export function Contact() {
         <div>
           <span className="eyebrow">07 / Make contact</span>
           <h2>
-            Let’s build
+            Have a project
             <br />
-            something that matters<span>.</span>
+            in mind?
+            <br />
+            <em>Let’s make it happen.</em>
           </h2>
           <p>
             A developer opportunity. A business website. A useful idea. Tell me

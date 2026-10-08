@@ -8,21 +8,27 @@ import { Contact } from "./components/Contact";
 import { Icon } from "./components/Icon";
 import { TrainingProject } from "./components/TrainingProject";
 import { TechStack } from "./components/TechStack";
+import { ProjectMontage } from "./components/ProjectMontage";
 const services = [
   [
     "layers",
-    "Business websites & redesigns",
-    "Clear structure, responsive interfaces and a considered design for your business.",
+    "Business websites",
+    "A clear, professional online home for your business, with the right details in the right place.",
   ],
   [
-    "mail",
-    "Enquiries that connect",
-    "Contact and quote functionality, with WhatsApp integration when you need it.",
+    "branch",
+    "Website redesigns",
+    "A fresh look, clearer navigation and a better experience for your visitors.",
   ],
   [
     "code",
-    "Ready for the web",
-    "Mobile development, basic SEO, accessible foundations and deployment.",
+    "Responsive development",
+    "Websites that feel at home on phones, tablets and desktops.",
+  ],
+  [
+    "database",
+    "Website maintenance",
+    "Content updates, interface fixes and care for your existing website.",
   ],
 ] as const;
 export default function App() {
@@ -37,20 +43,26 @@ export default function App() {
         <Hero />
         <section id="work" className="work section-pad">
           <div className="container">
-            <div className="section-heading">
-              <div>
-                <span className="eyebrow">01 / Selected projects</span>
+            <div className="work-intro">
+              <div className="work-intro-copy">
+                <span className="eyebrow">Featured projects</span>
                 <h2>
-                  Built to be used<span>.</span>
+                  Real ideas.
+                  <br />
+                  <em>Working websites.</em>
                 </h2>
+                <p>
+                  A selection of client work, portfolio concepts and full-stack
+                  training projects. Explore the design and the code behind each
+                  one.
+                </p>
+                <a className="text-link" href="#project-details">
+                  Explore the projects <span aria-hidden="true">↗</span>
+                </a>
               </div>
-              <p>
-                Real client work. Independent concepts.
-                <br />
-                Different problems, considered implementations.
-              </p>
+              <ProjectMontage />
             </div>
-            <div className="project-grid">
+            <div id="project-details" className="project-grid">
               {projects.map((project, index) => (
                 <ProjectCard
                   key={project.id}
@@ -68,11 +80,16 @@ export default function App() {
           <div className="container">
             <span className="eyebrow">03 / Behind the work</span>
             <div className="about-grid">
-              <h2>
-                Curious by nature.
-                <br />
-                <span>Practical by design.</span>
-              </h2>
+              <div className="about-heading">
+                <h2>
+                  Creative mind.
+                  <br />
+                  <em>Practical solutions.</em>
+                </h2>
+                <span className="handwritten">
+                  Same focus. Bigger possibilities. ↗
+                </span>
+              </div>
               <div className="about-copy">
                 <p>
                   I’m Izel, a software and web developer based in Johannesburg.
@@ -92,6 +109,15 @@ export default function App() {
                   also build websites for small businesses.
                 </p>
               </div>
+            </div>
+            <div className="about-photo">
+              <img
+                src="./images/workspace-detail.webp"
+                alt="Purple-lit developer workspace with a monitor, leafy plant and books"
+                width="1200"
+                height="800"
+                loading="lazy"
+              />
             </div>
             <div className="about-bottom">
               <span>
@@ -163,8 +189,9 @@ export default function App() {
             <div className="services-heading">
               <span className="eyebrow">05 / For small businesses</span>
               <h2>
-                Your business.
-                <br />A better web presence<span>.</span>
+                Websites that
+                <br />
+                <em>work for you.</em>
               </h2>
               <p>
                 A clear online home for what you do, built around the people you
@@ -247,12 +274,8 @@ export default function App() {
         <Contact />
       </main>
       <footer className="container footer">
-        <a
-          className="wordmark"
-          href="#home"
-          aria-label="ib. — Izel Bianchina home"
-        >
-          ib<span>.</span>
+        <a className="wordmark" href="#home" aria-label="Izel Bianchina home">
+          Izel Bianchina<span>.</span>
         </a>
         <p>
           © {new Date().getFullYear()} Izel Bianchina
